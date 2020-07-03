@@ -23,6 +23,7 @@ set style line 3 lc 10 lw 3
 set style line 4 lc 6 lw 6
 set style line 5 lc 5 lw 3
 set style line 6 lc 7 lw 3
+set style line 7 lc 1 lw 3
 
 plot source using 1:3 with lines ls 1 title "naive tail-rec.", \
      source using 1:10 with linespoints ls 1 pt 4 title "stdlib", \
@@ -31,4 +32,5 @@ plot source using 1:3 with lines ls 1 title "naive tail-rec.", \
      source using 1:4 with lines ls 2 title "base", \
      source using 1:6 with lines ls 5 title "containers", \
      source using 1:8 with lines ls 4 title "new", \
-     source using 1:9 with lines ls 6 title "tupled"
+     source using 1:9 with lines ls 6 title "tupled", \
+     source using 1:10 with lines ls 7 title "trmc", \
