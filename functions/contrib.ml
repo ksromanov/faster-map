@@ -21,3 +21,9 @@ let tupled_map f xs =
       rise (List.map f xs) bs in
 
   dive [] xs
+
+let rec trmc_map f = function
+ | [] -> []
+ | x :: xs ->
+   f x :: trmc_map f xs
+ [@@trmc]

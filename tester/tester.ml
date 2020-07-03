@@ -23,6 +23,9 @@ let stack_safe_map_functions = [
 
   "tupled",
     Functions.Contrib.tupled_map;
+
+  "trmc",
+    Functions.Contrib.trmc_map;
 ]
 
 let stack_unsafe_map_functions = [
