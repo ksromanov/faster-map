@@ -367,6 +367,12 @@ struct
       y1::y2::y3::y4::y5::tail
 end
 
+module Trmc =
+struct
+  let rec map f = function
+      [] -> check_stack_size (); []
+    | a::l -> f a :: map f l [@@trmc]
+end
 
 
 let measure label map_function =
