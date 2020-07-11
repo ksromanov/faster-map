@@ -9,4 +9,6 @@ To measure the speed of TRMC map:
 
 2. Do not set `OCAMLPARAM="force_trmc=1,_"`!
 
-3. Run `make`, the resulting picture will be in `./_report/map.svg`
+3. Set `ulimit -s unlimited` to avoid Stack Overflow errors (for Stdlib.map) on larger inputs.
+
+4. Run `make`, the resulting picture will be in `./_report/map.svg`
